@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="/styles/settings.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Settings</h1>
+        <form id="settings-form">
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="regularBreaksEnabled" name="regularBreaksEnabled">
+                    <label for="regularBreaksEnabled">Enable Regular Break Reminders</label>
+                </div>
+                <div class="setting-frequency">
+                    <input type="number" id="regularBreaksFrequency" name="regularBreaksFrequency" min="1">
+                    <label for="regularBreaksFrequency">Frequency (in minutes)</label>
+                </div>
+                
+            </div>
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="mindfulnessRemindersEnabled" name="mindfulnessRemindersEnabled">
+                    <label for="mindfulnessRemindersEnabled">Enable Mindfulness Reminders</label>
+                </div>
+                <div class="setting-frequency">
+                    <input type="number" id="mindfulnessRemindersFrequency" name="mindfulnessRemindersFrequency" min="1">
+                    <label for="mindfulnessRemindersFrequency">Frequency (in minutes)</label>
+                </div>
+            </div>
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="positiveAffirmationRemindersEnabled" name="positiveAffirmationRemindersEnabled">
+                    <label for="positiveAffirmationRemindersEnabled">Enable Positive Affirmation Reminders</label>
+                </div>
+                <div class="setting-frequency">
+                    <input type="number" id="positiveAffirmationRemindersFrequency" name="positiveAffirmationRemindersFrequency" min="1">
+                    <label for="positiveAffirmationRemindersFrequency">Frequency (in minutes)</label>
+                </div>
+            </div>
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="pomodoroTechniqueEnabled" name="pomodoroTechniqueEnabled">
+                    <label for="pomodoroTechniqueEnabled">Enable Pomodoro Technique Reminders</label>
+                </div>
+            </div>              
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="socialInteractionRemindersEnabled" name="socialInteractionRemindersEnabled">
+                    <label for="socialInteractionRemindersEnabled">Enable Social Interaction Reminders</label>
+                </div>
+                <div class="setting-frequency">
+                    <input type="number" id="socialInteractionRemindersFrequency" name="socialInteractionRemindersFrequency" min="1">
+                    <label for="socialInteractionRemindersFrequency">Frequency (in minutes)</label>
+                </div>
+            </div>
+            <div class="setting-item">
+                <div class="setting-toggle">
+                    <input type="checkbox" id="healthyHabitRemindersEnabled" name="healthyHabitRemindersEnabled">
+                    <label for="healthyHabitRemindersEnabled">Enable Healthy Habit Reminders</label>
+                </div>
+                <div class="setting-frequency">
+                    <input type="number" id="healthyHabitRemindersFrequency" name="healthyHabitRemindersFrequency" min="1">
+                    <label for="healthyHabitRemindersFrequency">Frequency (in minutes)</label>
+                </div>
+            </div>
+            <p id="save-success" style="display: none;">Settings saved successfully!</p>
+            <button type="submit">Save</button>
+        </form>
+
+        <h2>FAQ</h2>
+        <div class="faq">
+            <!-- FAQ sections go here -->
+            <div class="accordion-item">
+                <button class="accordion-toggle active">What is the 'Regular Breaks' feature?</button>
+                <div class="accordion-content active">
+                    <p>Regular Breaks is a feature that will remind you to take a break from your work at regular intervals. The frequency of these reminders is customizable and can be set in minutes.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">What is the 'Mindfulness Reminders' feature?</button>
+                <div class="accordion-content">
+                    <p>Mindfulness Reminders will periodically remind you to take a moment and center your thoughts, promoting a more mindful and focused work environment.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">What is the 'Positive Affirmation Reminders' feature?</button>
+                <div class="accordion-content">
+                    <p>The 'Positive Affirmation Reminders' feature provides you with periodic positive affirmations to boost your mood and morale. The frequency of these reminders can be set to your preference.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">What is the 'Pomodoro Technique Reminders' feature?</button>
+                <div class="accordion-content">
+                    <p>The 'Pomodoro Technique Reminders' feature helps you manage your time effectively using the Pomodoro Technique. This technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. You will receive reminders to start a new Pomodoro session and to take breaks after each session.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">What is the 'Social Interaction Reminders' feature?</button>
+                <div class="accordion-content">
+                    <p>The 'Social Interaction Reminders' feature prompts you to engage in social activities periodically. In a work-from-home setting, it's easy to become isolated. This feature will remind you to interact with others, improving your social well-being.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">What is the 'Healthy Habit Reminders' feature?</button>
+                <div class="accordion-content">
+                    <p>The 'Healthy Habit Reminders' feature encourages you to engage in healthy habits periodically. This can range from reminding you to drink water to suggesting a quick exercise. It's customizable to match your personal health goals.</p>
+                </div>
+            </div>
+                
+        </div>
+</div>
+    <script src="/scripts/settings.js"></script>
+</body>
+</html>
